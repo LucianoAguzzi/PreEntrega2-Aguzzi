@@ -1,0 +1,213 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+}
+.nav-link{
+    display: flex;
+    text-align: right;
+}
+.titulo{
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+footer{
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #111;
+    height: auto;
+    width: 100vh;
+    padding: 20px;
+    color: white;
+}
+.sociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+}
+.contenido-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: 100vw;
+}
+
+.fotosobremi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 10px 0px;
+    height: auto;
+    width: 100vw;
+}
+.textobio{
+    margin: 0px 420px 0px 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+}
+.grid-container {
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 200px 1fr 200px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 40px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.sigamosencontacto:hover{
+    transform: translate(80px);
+    transition: all 2s;
+}
+.sigamosencontacto{
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 50px;
+}
+.planillacontacto{
+    padding: 20px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "foto1 foto2"
+    "foto3 foto4";
+  }
+  
+  .foto1 { grid-area: foto1; }
+  
+  .foto2 { grid-area: foto2; }
+  
+  .foto3 { grid-area: foto3; }
+  
+  .foto4 { grid-area: foto4; }
+
+.carousel-inner{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.carousel-control-prev{
+    margin-left: 350px;
+}
+.carousel-control-next{
+    margin-right: 350px;
+}
+.fotomia{
+    grid-area: fotomia;
+}
+.textoFooter{
+    grid-area: textofooter;
+}
+.header{
+    grid-area: header;
+}
+.nav ul{
+    grid-area: nav ul;
+}
+.footer{
+    grid-area: footer;
+}
+.icon1{
+    grid-area: icon1;
+}
+.galeriaindex{
+    grid-area: galeriaindex;
+}
+.fotosobremi{
+    grid-area: fotosobremi;
+}
+.textobio{
+    grid-area: textobio;
+}
+.grid-container{
+    grid-area: grid-container;
+}
+.galeria-grid{
+    grid-area: galeria-grid;
+}
+.sigamosencontacto{
+    grid-area: sigamosencontacto;
+}
+.planillacontacto{
+    grid-area: planillacontacto;
+}
+.img{
+    width: 100vh;
+}
+
+@media (max-width:480px) {
+    .footer ul{
+      display: inline;
+    }
+}
+@media screen and (min-width:481px) {
+    .footer ul{
+      display: inline;
+    }
+}
+@media screen and (max-width:480px){
+    .container {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: 
+        'foto1'
+        'foto2'
+        'foto3'
+        'foto4'
+        'footer'
+      }
+      .foto111 { grid-area:foto1; width: 470px;  }
+      
+      .foto222 { grid-area:foto2; width: 470px; }
+      
+      .foto333 { grid-area: foto3; width:470px;}
+      
+      .foto444 { grid-area: foto4; width:470px; }
+}
+
+
+@media screen and (max-width:768px){
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: 
+        'foto1'  'foto2'
+        'foto3'  'foto4'
+      }
+      .foto111 { grid-area:foto1; width: 350px;  }
+      
+      .foto222 { grid-area:foto2; width: 350px; }
+      
+      .foto333 { grid-area: foto3; width: 350px;}
+      
+      .foto444 { grid-area: foto4; width: 350px; }
+}
